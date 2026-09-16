@@ -24,7 +24,7 @@ The HTTP response is `500 Internal Server Error`.
 
 Miniflare's local queue broker (`QueueBrokerObject.#enqueue`) calls `setTimeout` for every enqueued message. Workerd caps active timeouts at 10,000. Sending 20,000 messages in one request exceeds that cap, so `sendBatch()` fails partway through.
 
-This is a local-only limit. Production Queues do not use this timeout quota.
+This is probably a local-only limit. Production Queues presumably do not use this timeout quota.
 
 ## Reproduce
 
