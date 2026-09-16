@@ -1,0 +1,22 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "cloudflare-queue-error-example",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-09-15",
+	"observability": {
+		"enabled": true
+	},
+	"queues": {
+		"consumers": [
+			{
+				"queue": "my-queue"
+			}
+		],
+		"producers": [
+			{
+				"binding": "MY_QUEUE",
+				"queue": "my-queue"
+			}
+		]
+	}
+}

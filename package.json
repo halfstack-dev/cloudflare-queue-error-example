@@ -1,0 +1,16 @@
+{
+	"name": "cloudflare-queue-error-example",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"cf-typegen": "wrangler types"
+	},
+	"devDependencies": {
+		"@types/node": "22",
+		"typescript": "6.0.3",
+		"wrangler": "4.131.2"
+	}
+}
